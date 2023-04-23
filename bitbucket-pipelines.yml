@@ -10,7 +10,7 @@ pipelines:
           clone:
             enabled: true
           script:
-            - git remote gh git@github.com:btk467/wcb-architecture-reporting.git
+            - git remote add gh git@github.com:btk467/wcb-architecture-reporting.git
             - git push gh master
             #- apt-get update && apt-get install -y git
             #- git clone https://${BITBUCKET_GIT_HTTP_ORIGIN} /tmp/repo

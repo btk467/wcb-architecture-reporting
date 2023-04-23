@@ -7,6 +7,8 @@ pipelines:
     master:
       - step:
           name: Deploy to GitHub Pages
+          clone:
+            enabled: true
           script:
             - git remote add gh https://github.com/btk467/wcb-architecture-reporting.git
             - git pull gh

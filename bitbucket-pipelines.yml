@@ -9,6 +9,7 @@ pipelines:
           name: Deploy to GitHub Pages
           script:
             - git remote add gh https://github.com/btk467/wcb-architecture-reporting.git
+            - git fetch gh
             - git push gh
             #- apt-get update && apt-get install -y git
             #- git clone https://${BITBUCKET_GIT_HTTP_ORIGIN} /tmp/repo

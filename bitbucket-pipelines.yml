@@ -1,6 +1,6 @@
 # Pipeline script to deploy ArchiMate model as HTML to GitHub Pages
 
-image: python:3.9
+image: maven:3.6.3
 
 pipelines:
   branches:
